@@ -19,7 +19,13 @@ module.exports = {
           800: "#1e40af",
           900: "#1e3a8a",
           950: "#172554",
+          green: "#A4BC9C",
+          green_hover: "#8CA68B",
+          green_bg: "#D6F5CB",
         },
+      },
+      dropShadow: {
+        customRD: "50px 50px 0 #A4BC9C", // x y blur color
       },
     },
     fontFamily: {
