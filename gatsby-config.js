@@ -3,8 +3,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `taemin-jang.github.io`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Taemin's Portfolio`,
+    siteUrl: `https://www.taemin-jang.github.io`,
+    description: "Welcome to My Portfolio Site! \n Frontend Developer.",
+    copyright: "Copyright 2023 Life Spice. All rights reserved.",
   },
   plugins: [
     "gatsby-plugin-postcss",
