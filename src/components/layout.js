@@ -1,15 +1,20 @@
 import * as React from "react";
-import Header from "../components/header";
+import Header from "./header";
+import Hero from "./hero";
+import Tech from "./tech";
+import Project from "./project";
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
     <div className="layout">
       <Header />
-      <div className="content">{children}</div>
-      <footer>
+      <Hero></Hero>
+      <Tech></Tech>
+      <Project></Project>
+      {/* <footer>
         <p>Copyright 2023</p>
         <p>All rights reserved.</p>
-      </footer>
+      </footer> */}
     </div>
   );
 };
