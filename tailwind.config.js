@@ -22,10 +22,26 @@ module.exports = {
           green: "#A4BC9C",
           green_hover: "#8CA68B",
           green_bg: "#D6F5CB",
+          project2: "#bebfff",
+          project3: "#EFEDEF",
+        },
+        badge: {
+          vue: "#4FC08D",
+          vuetify: "#1867C0",
+          js: "#F7DF1E",
+          ts: "#3178C6",
+          express: "#000000",
+          node: "#339933",
+          html: "#E34F26",
+          css: "#1572B6",
+          git: "#F05032",
+          webrtc: "#333333",
+          socket: "#010101",
         },
       },
       dropShadow: {
         customRD: "50px 50px 0 #A4BC9C", // x y blur color
+        shadowRD: "20px 20px 15px #000000", // x y blur color
       },
     },
     fontFamily: {
