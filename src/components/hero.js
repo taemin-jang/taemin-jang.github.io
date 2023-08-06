@@ -33,7 +33,7 @@ const Hero = () => {
           </div>
           <div>
             <StaticImage
-              src="../images/GitHub-Mark.png"
+              src="../images/JangTaemin2.png"
               width={600}
               height={600}
               className="drop-shadow-customRD"

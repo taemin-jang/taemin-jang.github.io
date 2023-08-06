@@ -34,7 +34,7 @@ const Project1 = () => {
                 src="../../images/projects/interviewsystem_태블릿_목업2.png"
                 width={600}
                 height={600}
-                className="transition duration-700 ease-in-out drop-shadow-shadowRD absolute group-hover:-z-10 group-hover:translate-x-10 group-hover:translate-y-10 -left-8 bottom-8"
+                className="!absolute transition duration-700 ease-in-out drop-shadow-shadowRD group-hover:-z-10 group-hover:translate-x-10 group-hover:translate-y-10 -left-8 bottom-8"
               />
             </div>
             <div className="pt-20 w-1/2">
