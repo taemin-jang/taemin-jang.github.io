@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* a 태그로 이동 시 천천히 이동 */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
