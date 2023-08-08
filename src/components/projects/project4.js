@@ -22,6 +22,17 @@ const Project1 = () => {
                   className="rounded-3xl ml-3 mt-1"
                 />
               </a>
+              <a
+                href="https://github.com/taemin-jang/news_summary_backend"
+                target="blank"
+              >
+                <StaticImage
+                  src="../../images/GitHub-Mark.png"
+                  width={40}
+                  height={40}
+                  className="rounded-3xl ml-3 mt-1"
+                />
+              </a>
             </p>
           </div>
           <div className="relative max-w-full mt-10 -mb-10 flex justify-evenly boder-solid border-black border-4 rounded-3xl">

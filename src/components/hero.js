@@ -23,12 +23,14 @@ const Hero = () => {
               <p className="text-lg leading-8 text-gray-900 font-bold">
                 연락처 | 010-5681-3051
               </p>
-              <StaticImage
-                src="../images/GitHub-Mark.png"
-                width={40}
-                height={40}
-                className="rounded-3xl mt-1"
-              />
+              <a href="https://github.com/taemin-jang" target="blank">
+                <StaticImage
+                  src="../images/GitHub-Mark.png"
+                  width={40}
+                  height={40}
+                  className="rounded-3xl mt-1"
+                />
+              </a>
             </div>
           </div>
           <div>
