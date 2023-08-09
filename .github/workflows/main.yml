@@ -1,13 +1,13 @@
 name: Cache static files on AWS S3 storage
 
 env:
-  STATIC_PATH: ./static/
+  STATIC_PATH: ./images/
   S3_BUCKET_NAME: my-blog-contents
 
 on:
   push:
     paths:
-      - "*/static/*"
+      - "*/images/*"
 
 jobs:
   deploy:
