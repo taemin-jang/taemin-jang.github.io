@@ -1,7 +1,7 @@
 name: Cache static files on AWS S3 storage
 
 env:
-  STATIC_PATH: ./my-gatsby/public/static/
+  STATIC_PATH: ./static/
   S3_BUCKET_NAME: my-blog-contents
 
 on:
@@ -26,3 +26,4 @@ jobs:
           aws-region: ap-northeast-2
 
       - name: sync static directory with s3
+        run: aws s3 sync $STATIC_PATH. s3://$S3_BUCKET_NAME --delete
