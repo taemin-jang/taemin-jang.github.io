@@ -4,10 +4,7 @@ env:
   STATIC_PATH: ./images/
   S3_BUCKET_NAME: my-blog-contents
 
-on:
-  push:
-    paths:
-      - "*/images/*"
+on: push
 
 jobs:
   deploy:
