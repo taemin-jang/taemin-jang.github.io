@@ -12,6 +12,7 @@ module.exports = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-mdx",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -22,22 +23,26 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-plugin-mdx",
       options: {
-        // The unique name for each instance
-        name: `projects`,
-        // Path to the directory
-        path: `${__dirname}/src/components/projects`,
+        extensions: [".mdx", ".md"],
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        // The unique name for each instance
-        name: `components`,
-        // Path to the directory
-        path: `${__dirname}/src/components`,
+        name: `posts`,
+        path: `${__dirname}/src/posts`,
       },
     },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: { path: `${__dirname}/src/posts` },
+    },
+    {
+      resolve: "gatsby-plugin-mdx-frontmatter",
+    },
+    `gatsby-transformer-remark`,
+    `gatsby-transformer-json`,
   ],
 };
