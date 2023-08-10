@@ -1,13 +1,12 @@
 name: Cache static files on AWS S3 storage
 
 env:
-  STATIC_PATH: ./images/
-  S3_BUCKET_NAME: my-blog-contents
+  STATIC_PATH: ./
 
 on:
   push:
-    paths:
-      - "images/*"
+    branches:
+      - "deploy"
 
 jobs:
   deploy:
@@ -26,4 +25,4 @@ jobs:
           aws-region: ap-northeast-2
 
       - name: sync static directory with s3
-        run: aws s3 sync $STATIC_PATH. s3://$S3_BUCKET_NAME --delete
+        run: aws s3 sync $STATIC_PATH. s3://${{ secrets.AWS_S3_BUCKET_NAME }} --delete
