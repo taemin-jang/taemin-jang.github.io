@@ -2,6 +2,7 @@ import * as React from "react";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Header from "../components/blog/header.js";
+
 export default function Template({ data }) {
   const post = data?.markdownRemark;
   const profile = getImage(post?.frontmatter.profile);
@@ -72,33 +73,10 @@ export default function Template({ data }) {
                 image={image}
                 className="rounded-3xl border-solid border-inherit border-2"
               />
-              <div className="flex items-center gap-x-4 text-xs">
-                <time datetime="2020-03-16" className="text-gray-500">
-                  Mar 16, 2020
-                </time>
-                <Link
-                  href="#"
-                  className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
-                >
-                  Marketing
-                </Link>
-              </div>
-              <div dangerouslySetInnerHTML={{ __html: post?.html }} />
-              <div className="group relative">
-                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"></h3>
-                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                  Illo sint voluptas. Error voluptates culpa eligendi. Hic vel
-                  totam vitae illo. Non aliquid explicabo necessitatibus unde.
-                  Sed exercitationem placeat consectetur nulla deserunt vel.
-                  Iusto corrupti dicta.
-                </p>
-              </div>
-              <div className="relative mt-8 flex items-center gap-x-4">
-                <div className="text-sm leading-6">
-                  <p className="font-semibold text-gray-900"></p>
-                  <p className="text-gray-600">Co-Founder / CTO</p>
-                </div>
-              </div>
+              <div
+                className=""
+                dangerouslySetInnerHTML={{ __html: post?.html }}
+              />
             </article>
           </div>
         </div>

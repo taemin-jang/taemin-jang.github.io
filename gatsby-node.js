@@ -1,4 +1,6 @@
+// const { createFilePath } = require("gatsby-source-filesystem");
 const path = require(`path`);
+
 // Log out information after a build is done
 exports.onPostBuild = ({ reporter }) => {
   reporter.info(`Your Gatsby site has been built!`);
@@ -33,6 +35,12 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 };
+
+// exports.onCreateNode = ({ node }) => {
+//   if (node.internal.type === `MarkdownRemark`) {
+//     console.log(createFilePath({ node, getNode, basePath: "posts" }));
+//   }
+// };
 
 // exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
 //   createTypes(`
