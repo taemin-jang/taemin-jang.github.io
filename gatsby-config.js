@@ -36,6 +36,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-page-creator",
       options: { path: `${__dirname}/src/posts` },
     },
@@ -44,5 +51,6 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-transformer-json`,
+    `gatsby-transformer-sharp`, // Needed for dynamic Image (GatsbyImage)
   ],
 };

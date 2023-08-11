@@ -33,3 +33,16 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 };
+
+// exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
+//   createTypes(`
+//     type Mdx implements Node {
+//       frontmatter: MdxFrontmatter
+//     }
+
+//     type MdxFrontmatter {
+//       profile: String @mdx
+//       image: String @mdx
+//     }
+//   `);
+// };
