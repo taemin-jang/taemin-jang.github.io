@@ -14,6 +14,9 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-mdx",
     {
+      resolve: "gatsby-plugin-mdx-frontmatter",
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         // The unique name for each instance
@@ -36,6 +39,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-page-creator",
       options: { path: `${__dirname}/src/posts` },
     },
@@ -44,5 +54,6 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-transformer-json`,
+    `gatsby-transformer-sharp`, // Needed for dynamic Image (GatsbyImage)
   ],
 };
