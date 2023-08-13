@@ -16,6 +16,7 @@
     "deploy": "gatsby build && gh-pages -d public -b deploy -t true --dotfiles"
   },
   "dependencies": {
+    "@deckdeckgo/highlight-code": "^3.6.0",
     "autoprefixer": "^10.4.14",
     "gatsby": "^5.11.0",
     "gatsby-plugin-image": "^3.11.0",
@@ -24,6 +25,9 @@
     "gatsby-plugin-page-creator": "^5.11.0",
     "gatsby-plugin-postcss": "^6.11.0",
     "gatsby-plugin-sharp": "^5.11.0",
+    "gatsby-remark-code-buttons": "^2.0.7",
+    "gatsby-remark-code-titles": "^1.1.0",
+    "gatsby-remark-highlight-code": "^3.3.0",
     "gatsby-remark-images": "^7.11.0",
     "gatsby-source-filesystem": "^5.11.0",
     "gatsby-transformer-json": "^5.11.0",

@@ -2,32 +2,31 @@ import * as React from "react";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Header from "../components/blog/header.js";
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+deckDeckGoHighlightElement();
 
 export default function Template({ data }) {
   const post = data?.markdownRemark;
   const profile = getImage(post?.frontmatter.profile);
-  const image = getImage(post?.frontmatter.image);
-  console.log(data);
-  console.log(profile);
-  console.log(image);
+  const thumbnail = getImage(post?.frontmatter.thumbnail);
   return (
     <div className="layout">
       <Header />
-      <main className="bg-white py-12 sm:py-20">
+      <main className="bg-white">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="mx-auto">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
               {post?.frontmatter.title}
             </h1>
-            <div className="flex items-center justify-between mt-6">
+            <div className="flex items-center justify-between mt-8">
               <span className="flex items-center">
                 <GatsbyImage
                   image={profile}
-                  className="rounded-full border-2 border-solid border-inherit mr-2"
+                  class="rounded-3xl border-2 border-solid border-inherit mr-6"
                 />
-                <span className="">
-                  <p className="font-bold text-xs">Taemin</p>
-                  <p className="text-gray-400 text-xs">
+                <span className="ml-4">
+                  <p className="no font-bold text-xs">Taemin</p>
+                  <p className="no text-gray-400 text-xs">
                     {post?.frontmatter.date}
                   </p>
                 </span>
@@ -40,7 +39,7 @@ export default function Template({ data }) {
                   width="20"
                   height="20"
                   viewBox="0 0 30 30"
-                  className="mr-4"
+                  class="mr-6"
                 >
                   <path d="M 23 3 A 4 4 0 0 0 19 7 A 4 4 0 0 0 19.09375 7.8359375 L 10.011719 12.376953 A 4 4 0 0 0 7 11 A 4 4 0 0 0 3 15 A 4 4 0 0 0 7 19 A 4 4 0 0 0 10.013672 17.625 L 19.089844 22.164062 A 4 4 0 0 0 19 23 A 4 4 0 0 0 23 27 A 4 4 0 0 0 27 23 A 4 4 0 0 0 23 19 A 4 4 0 0 0 19.986328 20.375 L 10.910156 15.835938 A 4 4 0 0 0 11 15 A 4 4 0 0 0 10.90625 14.166016 L 19.988281 9.625 A 4 4 0 0 0 23 11 A 4 4 0 0 0 27 7 A 4 4 0 0 0 23 3 z"></path>
                 </svg>
@@ -67,11 +66,11 @@ export default function Template({ data }) {
               </span>
             </div>
           </div>
-          <div className="mx-auto mt-10 pb-10 max-w-2xl gap-x-8 gap-y-16 border-b border-gray-200 lg:mx-0 lg:max-w-none">
-            <article>
+          <div className="mx-auto my-10 pb-10 max-w-2xl gap-x-8 gap-y-16 border-b border-gray-200 lg:mx-0 lg:max-w-none">
+            <article className="mx-auto">
               <GatsbyImage
-                image={image}
-                className="rounded-3xl border-solid border-inherit border-2"
+                image={thumbnail}
+                className="rounded-3xl border-2 border-solid border-inherit"
               />
               <div
                 className=""
@@ -93,7 +92,7 @@ export const pageQuery = graphql`
         title
         slug
         date(formatString: "YYYY년 MM월 DD일 ")
-        image {
+        thumbnail {
           childImageSharp {
             gatsbyImageData
           }

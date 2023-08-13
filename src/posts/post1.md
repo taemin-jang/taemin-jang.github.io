@@ -1,9 +1,11 @@
 ---
-title: Hello, world! tony
-slug: hello-world
-date: 2019-01-29
+title: AJAX 동작 원리 및 CSRF / CORS
+slug: blog/post/1
+path: post/1
+date: 2023-08-06
 profile: "../images/JangTaemin2.png"
-image: "../images/preflight.png"
+thumbnail: "../images/preflight.png"
+description: "AJAX 동작 원리 및 CSRF와 CORS에 대해 알아보자!"
 ---
 
 # AJAX란?
@@ -32,7 +34,7 @@ AJAX는 XMLHTTPRequest를 기반으로 동작하며, HTTP 비동기 통신을 �
 
 ES6 이전 방식
 
-```jsx
+```js
 // 객체 생성
 var ourRequest = new XMLHttpRequest();
 
@@ -56,7 +58,7 @@ XMLHTTPRequest 보다 훨씬 코드가 직관적이다. Promise를 리턴한다.
 
 ES6 이후 방식
 
-```jsx
+```js
 fetch("https://taemin-jang.github.io/json-example/animals-1.json")
 	.then(res => res.json())
 	.then(resJson => console.log(resJson));
