@@ -4,8 +4,6 @@ slug: hello-world
 date: 2019-01-29
 profile: "../images/JangTaemin2.png"
 image: "../images/preflight.png"
-web_before_ajax: "../images/web_before_ajax.png"
-web_after_ajax: "../images/web_after_ajax.png"
 ---
 
 # AJAX란?
@@ -14,7 +12,7 @@ AJAX (Asynchronous JavaScript And Xml)는 자바스크립트를 사용하여 브
 
 ## AJAX 이전 전통적인 웹페이지 방식
 
-![Untitled]{web_before_ajax}
+![AJAX 이전 전통적인 웹페이지 방식](../images/web_before_ajax.png)
 
 1. 클라이언트로부터 요청이 들어왔을 때 이전 웹 페이지와 차이가 없어 변경할 필요가 없는 부분도 포함해서 새로운 HTML을 서버로부터 다시 전송받는다.
 2. 전송 받은 데이터를 처음부터 다시 렌더링한다. 이 때 화면 깜박임이 발생한다.
@@ -22,7 +20,7 @@ AJAX (Asynchronous JavaScript And Xml)는 자바스크립트를 사용하여 브
 
 ## AJAX 적용 후 웹페이지 방식
 
-![Untitled]({web_after_ajax})
+![AJAX 적용 후 웹페이지 방식](../images/web_before_ajax.png)
 
 1. 변경할 부분을 갱신하는 데 필요한 데이터만 받기 때문에 불필요한 데이터 통신이 발생하지 않는다.
 2. 변경할 필요가 없는 부분은 다시 렌더링하지 않는다. 화면 깜박임 현상이 발생하지 않는다.
@@ -91,7 +89,7 @@ CORS를 알기 전에 SOP 먼저 알고 가야한다.
 
 > 출처란 ?
 >
-> ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d963df6a-b159-4cfa-8fe3-dda44ac794f2/Untitled.png)
+> ![출처](../images/origin.png)
 >
 > Protocol + Host + Port를 출처라고 한다.
 >
@@ -103,9 +101,9 @@ CORS를 알기 전에 SOP 먼저 알고 가야한다.
 | http://api.domain.com     | x (host가 다르기 때문)     |
 | https://domain.com        | x (protocol이 다르기 때문) |
 
-이러한 정책은 보안 이슈로 인해 나오게 됐다.
+이러한 정책은 `보안 이슈`로 인해 나오게 됐다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d317b8b8-21f6-4296-81cd-e503776b9f0c/Untitled.png)
+![sop_issue](../images/sop_issue.png)
 
 만약 어떤 사이트를 방문했는데 해당 사이트가 누군가 악의적으로 만든 사이트라고 가정하자.
 
@@ -147,7 +145,7 @@ CORS를 허용하려면 서버 측에서 Access-Control-Allow-Origin = ‘\*’ 
 
 Simple Request와는 다르게 먼저 Option 메서드를 통해 다른 출처의 리소스로 HTTP 요청을 보낸 후 실제로 HTTP 요청을 전송하기 안전한지 확인한다. (사전 작업)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/07997248-ca8b-4b7f-9fd5-0c0e106f09f4/Untitled.png)
+![Preflight Request](../images/preflight_request.png)
 
 - Preflight Request : 헤더에 실제 요청 시 어떤 헤더와 HTTP Method를 사용할 지 전달
   - Access-Control-Request-Method : 실제 요청 시 전송 할 HTTP Method
@@ -165,7 +163,7 @@ Simple Request와는 다르게 먼저 Option 메서드를 통해 다른 출처�
 
 서버는 CORS를 모른다!
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ca539ad2-97a5-45a6-b3f9-c44667cd35ad/Untitled.png)
+![No Preflight](../images/no_preflight.png)
 
 만약 Preflight를 안하게 됐을 때 Delete나 Put 같은 HTTP Method로 요청을 한다고 해보자.
 
@@ -175,7 +173,7 @@ Simple Request와는 다르게 먼저 Option 메서드를 통해 다른 출처�
 
 그렇기 때문에 Preflight가 필요하게 된다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/61c56028-37bb-4a05-b7cb-cce05015e499/Untitled.png)
+![Preflight](../images/preflight.png)
 
 위 그림과 같이 Preflight를 통해서 요청된 origin(출처)가 올바른지 확인 후 올바르지 않다면(=CORS) 서버에서는 어떠한 처리도 하지 않기 때문에 실제 요청을 보내지 않는다.
 
