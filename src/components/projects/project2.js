@@ -6,7 +6,7 @@ const Project2 = () => {
       <div className=" before:bg-primary-project2 py-24 sm:py-40 before:content-['']  before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:-z-10">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl lg:text-center">
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="no mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               4this HomePage
               <a
                 href="https://github.com/taemin-jang/4thIS_Page_FE"
@@ -22,7 +22,7 @@ const Project2 = () => {
               <a
                 href="http://fourthis.cafe24.com/"
                 target="blank"
-                className="ml-3 p-2 text-xl font-semibold bg-black rounded-xl text-white"
+                className="no ml-3 p-2 text-xl font-semibold bg-black rounded-xl text-white"
               >
                 Demo
               </a>
@@ -59,20 +59,22 @@ const Project2 = () => {
                   Git
                 </span>
               </div>
-              <ul className="text-base leading-8 text-gray-900 mt-3">
-                <li>- 스케쥴 및 팀원 관리, 메인 페이지, 모바일 반응형 제작</li>
-                <li>
+              <ul className="no text-base leading-8 text-gray-900 mt-3">
+                <li className="no">
+                  - 스케쥴 및 팀원 관리, 메인 페이지, 모바일 반응형 제작
+                </li>
+                <li className="no">
                   - Vanila JavaScript 사용하여 슬라이드, 카운트 다운, 마우스
                   포인터 구현
                 </li>
-                <li>
+                <li className="no">
                   - 협업 능력을 기르기 위해 git 컨벤션, CSS BEM 방식을 주도하여
                   진행
                 </li>
-                <li>
+                <li className="no">
                   - 2021년에 비해 동아리 지원율 <strong>2배</strong> 증가
                 </li>
-                <li>- cafe24로 배포</li>
+                <li className="no">- cafe24로 배포</li>
               </ul>
             </div>
           </div>

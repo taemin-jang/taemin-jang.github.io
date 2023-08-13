@@ -7,7 +7,7 @@ const Project1 = () => {
       <div className=" before:bg-gradient-to-tr from-[#8A52A3] to-[#972B44] py-20 sm:py-44 before:content-[''] before:opacity-70 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:-z-10">
         <div className="mx-auto max-w-7xl ">
           <div className="mx-auto max-w-2xl lg:text-center">
-            <p className=" text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="no text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Movify
               <span>
                 <a
@@ -24,7 +24,7 @@ const Project1 = () => {
                 <a
                   href="https://superb-entremet-0f24f9.netlify.app/"
                   target="blank"
-                  className="ml-3 p-2 text-xl font-semibold bg-black rounded-xl text-white"
+                  className="no ml-3 p-2 text-xl font-semibold bg-black rounded-xl text-white"
                 >
                   Demo
                 </a>
@@ -61,10 +61,12 @@ const Project1 = () => {
                 </span>
               </div>
               <div className="text-base leading-8 text-gray-900 mt-3">
-                <p>- TMDB API를 활용한 영화 사이트 개발.</p>
-                <p>- RAF(RequestAnimationFrame)를 이용하여 카운트 기능 구현.</p>
-                <p>- TMDB API를 활용해 검색 기능 구현.</p>
-                <p>- Axios를 사용하여 HTTP 통신.</p>
+                <p className="no">- TMDB API를 활용한 영화 사이트 개발.</p>
+                <p className="no">
+                  - RAF(RequestAnimationFrame)를 이용하여 카운트 기능 구현.
+                </p>
+                <p className="no">- TMDB API를 활용해 검색 기능 구현.</p>
+                <p className="no">- Axios를 사용하여 HTTP 통신.</p>
               </div>
             </div>
           </div>

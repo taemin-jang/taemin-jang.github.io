@@ -6,20 +6,20 @@ const Hero = () => {
       <div className="relative isolate px-6 lg:px-8">
         <div className="mx-auto max-w-7xl py-32 sm:pb-48 lg:pb-56 flex justify-between">
           <div className="text-left gap-8 max-w-3xl sm:pt-20 lg:pt-20">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="no text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               안녕하세요!
             </h1>
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="no text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               프론트엔드 개발자
             </h1>
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="no text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               <span className="text-primary-green">장태민</span>입니다.
             </h1>
             <div className="bg-primary-green_bg rounded-xl p-3 mt-4">
-              <p className="text-lg leading-8 text-gray-900 font-bold">
+              <p className="no text-lg leading-8 text-gray-900 font-bold">
                 이메일 | ttaemni@gmail.com
               </p>
-              <p className="text-lg leading-8 text-gray-900 font-bold">
+              <p className="no text-lg leading-8 text-gray-900 font-bold">
                 연락처 | 010-5681-3051
               </p>
               <a href="https://github.com/taemin-jang" target="blank">

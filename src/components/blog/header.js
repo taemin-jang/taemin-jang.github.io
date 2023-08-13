@@ -1,22 +1,13 @@
 import * as React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { Link } from "gatsby";
 const Header = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
   return (
     <header>
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <Link to="/" className="no flex items-center p-4">
+          <Link to="/" className="flex items-center p-4 no">
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white text-primary-green">
-              {data.site.siteMetadata.title}
+              Taemlog
             </span>
           </Link>
           <div
@@ -30,7 +21,7 @@ const Header = () => {
                   className="no block py-2 pr-4 pl-3 text-white rounded bg-primary-green lg:bg-transparent lg:text-primary-green lg:p-0 dark:text-white"
                   aria-current="page"
                 >
-                  Home
+                  Tech
                 </Link>
               </li>
               <li className="no">
@@ -38,7 +29,7 @@ const Header = () => {
                   href="#skills"
                   className="no block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-green_hover lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
-                  Skills
+                  Diary
                 </Link>
               </li>
               <li className="no">

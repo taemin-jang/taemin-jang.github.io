@@ -6,10 +6,10 @@ const Tech = () => {
       <div className="bg-primary-green_bg py-24 sm:py-36">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-indigo-600">
+            <h2 className="no text-base font-semibold leading-7 text-indigo-600">
               Skills
             </h2>
-            <p className="my-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="no my-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               기술 스택
             </p>
             <div className="flex justify-around my-10">
@@ -66,13 +66,17 @@ const Tech = () => {
                   Vue
                 </dt>
                 <dd className="mt-2 text-base leading-7 text-gray-600">
-                  <p>
+                  <p className="no">
                     Vue2 Option API, Vue3 Composition API의 사용 경험이
                     있습니다.
                   </p>
-                  <p>Vuex, Pinia의 상태관리 라이브러리 사용 경험이 있습니다.</p>
-                  <p>Vuetify3 UI 라이브러리 사용 경험이 있습니다.</p>
-                  <p>
+                  <p className="no">
+                    Vuex, Pinia의 상태관리 라이브러리 사용 경험이 있습니다.
+                  </p>
+                  <p className="no">
+                    Vuetify3 UI 라이브러리 사용 경험이 있습니다.
+                  </p>
+                  <p className="no">
                     Axios를 사용하여 Open API 호출 및 데이터 바인딩 경험이
                     있습니다.
                   </p>
@@ -98,10 +102,14 @@ const Tech = () => {
                   JavaScript
                 </dt>
                 <dd className="mt-2 text-base leading-7 text-gray-600">
-                  <p>ES6+ 문법을 사용할 수 있습니다.</p>
-                  <p>JavaScript 동작 방식을 이해하고 있습니다.</p>
-                  <p>TypeScript를 사용할 수 있습니다.</p>
-                  <p>TypeScript 개발 환경 구축 경험이 있습니다.</p>
+                  <p className="no">ES6+ 문법을 사용할 수 있습니다.</p>
+                  <p className="no">
+                    JavaScript 동작 방식을 이해하고 있습니다.
+                  </p>
+                  <p className="no">TypeScript를 사용할 수 있습니다.</p>
+                  <p className="no">
+                    TypeScript 개발 환경 구축 경험이 있습니다.
+                  </p>
                 </dd>
               </div>
               <div className="relative pl-16">
@@ -132,12 +140,16 @@ const Tech = () => {
                   Express.js
                 </dt>
                 <dd className="mt-2 text-base leading-7 text-gray-600">
-                  <p>Web Application Server를 구축한 경험이 있습니다.</p>
-                  <p>
+                  <p className="no">
+                    Web Application Server를 구축한 경험이 있습니다.
+                  </p>
+                  <p className="no">
                     Sequelize와 MySQL을 사용하여 CRUD 및 API 설계 경험이
                     있습니다.
                   </p>
-                  <p>TypeScript로 개발 환경 구축 및 개발한 경험이 있습니다.</p>
+                  <p className="no">
+                    TypeScript로 개발 환경 구축 및 개발한 경험이 있습니다.
+                  </p>
                 </dd>
               </div>
               <div className="relative pl-16">
@@ -193,10 +205,12 @@ const Tech = () => {
                   HTML5 / CSS3
                 </dt>
                 <dd className="mt-2 text-base leading-7 text-gray-600">
-                  <p>웹 표준을 지키기 위해 노력합니다.</p>
-                  <p>반응형 웹을 만들 수 있습니다.</p>
-                  <p>BEM 방법론을 적용할 수 있습니다.</p>
-                  <p>Tailwind css 라이브러리 사용 경험이 있습니다.</p>
+                  <p className="no">웹 표준을 지키기 위해 노력합니다.</p>
+                  <p className="no">반응형 웹을 만들 수 있습니다.</p>
+                  <p className="no">BEM 방법론을 적용할 수 있습니다.</p>
+                  <p className="no">
+                    Tailwind css 라이브러리 사용 경험이 있습니다.
+                  </p>
                 </dd>
               </div>
               <div className="relative pl-16">
@@ -217,9 +231,11 @@ const Tech = () => {
                   Git
                 </dt>
                 <dd className="mt-2 text-base leading-7 text-gray-600">
-                  <p>기본적인 Git 명렁어를 사용할 수 있습니다.</p>
-                  <p>Git-flow 전략을 사용한 경험이 있습니다.</p>
-                  <p>Git Convention을 지키려고 노력합니다.</p>
+                  <p className="no">
+                    기본적인 Git 명렁어를 사용할 수 있습니다.
+                  </p>
+                  <p className="no">Git-flow 전략을 사용한 경험이 있습니다.</p>
+                  <p className="no">Git Convention을 지키려고 노력합니다.</p>
                 </dd>
               </div>
             </dl>
