@@ -22,9 +22,9 @@ export default function Template({ data }) {
               <span className="flex items-center">
                 <GatsbyImage
                   image={profile}
-                  class="rounded-3xl border-2 border-solid border-inherit mr-6"
+                  class="rounded-3xl border-2 border-solid border-inherit mr-4"
                 />
-                <span className="ml-4">
+                <span>
                   <p className="no font-bold text-xs">Taemin</p>
                   <p className="no text-gray-400 text-xs">
                     {post?.frontmatter.date}
