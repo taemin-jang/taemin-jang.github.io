@@ -86,6 +86,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-code-titles`,
           },
+          "gatsby-remark-gifs",
         ],
       },
     },
