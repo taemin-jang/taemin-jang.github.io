@@ -52,7 +52,44 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mdx-frontmatter",
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 600,
+            },
+          },
+          {
+            resolve: "gatsby-remark-code-buttons",
+            options: {
+              // Optional svg icon. Defaults to svg string and can be
+              // replaced with any other valid svg. Use custom classes
+              // in the svg string and skip `iconClass` option.
+              svgIcon: `<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>`,
+              // Optional toaster text. Defaults to ''.
+              toasterText: "복사했습니다.",
+            },
+          },
+          {
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+              terminal: "carbon",
+              theme: "blackboard",
+            },
+          },
+          {
+            resolve: `gatsby-remark-code-titles`,
+          },
+          "gatsby-remark-gifs",
+        ],
+      },
+    },
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`, // Needed for dynamic Image (GatsbyImage)
   ],

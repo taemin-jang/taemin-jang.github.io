@@ -14,8 +14,8 @@ const Header = () => {
     <header>
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <Link to="/" className="flex items-center p-4">
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+          <Link to="/portfolio" className="no flex items-center p-4">
+            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white text-primary-green">
               {data.site.siteMetadata.title}
             </span>
           </Link>
@@ -23,30 +23,38 @@ const Header = () => {
             className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
             id="mobile-menu-2"
           >
-            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-              <li>
+            <ul className="no flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+              <li className="no">
                 <Link
                   href="#home"
-                  className="block py-2 pr-4 pl-3 text-white rounded bg-primary-green lg:bg-transparent lg:text-primary-green lg:p-0 dark:text-white"
+                  className="no block py-2 pr-4 pl-3 text-white rounded bg-primary-green lg:bg-transparent lg:text-primary-green lg:p-0 dark:text-white"
                   aria-current="page"
                 >
                   Home
                 </Link>
               </li>
-              <li>
+              <li className="no">
                 <Link
                   href="#skills"
-                  className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-green_hover lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  className="no block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-green_hover lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Skills
                 </Link>
               </li>
-              <li>
+              <li className="no">
                 <Link
                   href="#project"
-                  className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-green_hover lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  className="no block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-green_hover lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Project
+                </Link>
+              </li>
+              <li className="no">
+                <Link
+                  to="/"
+                  className="no block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-green_hover lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Blog
                 </Link>
               </li>
             </ul>

@@ -6,10 +6,10 @@ const Project1 = () => {
       <div className=" before:bg-white py-24 sm:py-40 before:content-[''] before:opacity-70 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:-z-10">
         <div className="mx-auto max-w-7xl ">
           <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-indigo-600">
+            <h2 className="no text-base font-semibold leading-7 text-indigo-600">
               Project
             </h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="no mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               News Summary
               <a
                 href="https://github.com/taemin-jang/news_summary_frontend"
@@ -84,19 +84,25 @@ const Project1 = () => {
                 </span>
               </div>
               <div className="text-base leading-7 text-gray-900 mt-3">
-                <p>- 카카오 OAuth 기능으로 간편하게 로그인 가능.</p>
-                <p>- Pinia 상태관리 라이브러리를 도입해 props 복잡도 개선.</p>
-                <p>- Vuetify의 theme을 활용하여 다크모드 구현.</p>
-                <p>- 사용자 편의를 위해 무한 스크롤 구현.</p>
-                <p>
+                <p className="no">
+                  - 카카오 OAuth 기능으로 간편하게 로그인 가능.
+                </p>
+                <p className="no">
+                  - Pinia 상태관리 라이브러리를 도입해 props 복잡도 개선.
+                </p>
+                <p className="no">
+                  - Vuetify의 theme을 활용하여 다크모드 구현.
+                </p>
+                <p className="no">- 사용자 편의를 위해 무한 스크롤 구현.</p>
+                <p className="no">
                   - 포트폴리오에 등록된 주식마다 금융위원회 API로 최근 5일간의
                   종가를 시각적으로 표현하기 위해 차트로 구현.
                 </p>
-                <p>
+                <p className="no">
                   - 금융위원회 주식시세정보 Open API를 사용하여 주식
                   포트폴리오에 주식 등록 및 삭제 가능.
                 </p>
-                <p>
+                <p className="no">
                   - 등록된 포트폴리오를 기반으로 Naver Search API를 사용하여
                   뉴스 기사 제공.
                 </p>

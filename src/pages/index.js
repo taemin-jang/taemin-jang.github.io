@@ -1,18 +1,9 @@
 import * as React from "react";
-import Layout from "../components/layout";
-const PortfolioPage = () => {
-  return (
-    <Layout>
-      <section>
-        <div>
-          <h2>Title</h2>
-          <h3>Sub Title</h3>
-        </div>
-      </section>
-    </Layout>
-  );
+import Layout from "../components/blog/layout";
+const BlogPage = () => {
+  return <Layout></Layout>;
 };
 
-export default PortfolioPage;
+export default BlogPage;
 
-export const Head = () => <title>Portfolio Page</title>;
+export const Head = () => <title>Taemlog</title>;
