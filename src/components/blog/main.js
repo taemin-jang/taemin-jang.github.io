@@ -4,7 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 const Main = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(sort: { id: DESC }) {
+      allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
         edges {
           node {
             frontmatter {
