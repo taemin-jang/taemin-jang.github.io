@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "gatsby clean && gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -25,6 +25,7 @@
     "gatsby-plugin-page-creator": "^5.11.0",
     "gatsby-plugin-postcss": "^6.11.0",
     "gatsby-plugin-sharp": "^5.11.0",
+    "gatsby-remark-autolink-headers": "^6.11.0",
     "gatsby-remark-code-buttons": "^2.0.7",
     "gatsby-remark-code-titles": "^1.1.0",
     "gatsby-remark-gifs": "^1.2.0",
