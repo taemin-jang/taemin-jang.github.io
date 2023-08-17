@@ -44,6 +44,13 @@ module.exports = {
         customRD: "50px 50px 0 #A4BC9C", // x y blur color
         shadowRD: "20px 20px 15px #000000", // x y blur color
       },
+      screens: {
+        "4xl": "1680px",
+        "3xl": "1600px",
+        "2xl-m": {
+          max: "1536px",
+        },
+      },
     },
     fontFamily: {
       body: [

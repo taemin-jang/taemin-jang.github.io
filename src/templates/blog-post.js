@@ -13,7 +13,7 @@ export default function Template({ data }) {
   return (
     <div className="layout">
       <Header />
-      <Toc slug={post?.frontmatter.slug} />
+      <Toc toc={post?.tableOfContents} />
       <main className="bg-white">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="mx-auto">
@@ -89,6 +89,7 @@ export default function Template({ data }) {
 export const pageQuery = graphql`
   query ($slug: String) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+      tableOfContents
       html
       frontmatter {
         title

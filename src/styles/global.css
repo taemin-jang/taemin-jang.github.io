@@ -15,6 +15,71 @@
     list-style: none;
     margin: 0;
   }
+
+  .toc {
+    @apply fixed top-40 left-10 3xl:left-20 2xl-m:hidden pr-4;
+    border-left: 0.4rem solid rgb(204, 206, 217);
+    background-color: rgb(246, 248, 252);
+  }
+
+  .toc a:hover {
+    @apply text-black font-bold;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply scroll-mt-10;
+  }
+
+  .toc ul,
+  ol,
+  .ul,
+  .ol {
+    margin: 0;
+    margin-left: 1.25rem;
+    padding-left: 1rem;
+    line-height: 1.8;
+  }
+
+  .toc a,
+  .a {
+    @apply text-gray-400;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: none;
+    outline: none;
+  }
+
+  /* ol > li {
+    color: #3b424f;
+    list-style: decimal;
+  } */
+
+  .toc ol {
+    @apply list-none;
+  }
+
+  .toc ul > li {
+    @apply list-none;
+  }
+
+  .toc ul > li ul > li {
+    @apply list-none;
+  }
+
+  .toc ul > li ul > li ul > li {
+    @apply list-none;
+  }
+
+  .toc li,
+  .li {
+    padding: 0.125rem 0;
+  }
+
   /* head */
 
   h1,
