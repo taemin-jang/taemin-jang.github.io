@@ -2,6 +2,7 @@ import * as React from "react";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Header from "../components/blog/header.js";
+import Toc from "../components/blog/toc.js";
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
 deckDeckGoHighlightElement();
 
@@ -12,6 +13,7 @@ export default function Template({ data }) {
   return (
     <div className="layout">
       <Header />
+      <Toc slug={post?.frontmatter.slug} />
       <main className="bg-white">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="mx-auto">
