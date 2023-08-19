@@ -1,0 +1,398 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 5.11.0"/><style data-href="/styles.414567d17f7fde54fab3.css" data-identity="gatsby-global-css">.gatsby-code-button-container{display:flex;justify-content:flex-end;pointer-events:none;position:relative;top:28px;touch-action:none;z-index:100}.gatsby-code-button{cursor:pointer;pointer-events:auto}.gatsby-code-button:after{background-color:#000;color:#fff;content:attr(data-tooltip);display:none;font-size:16px;padding:5px;position:absolute;visibility:hidden;white-space:nowrap}.gatsby-code-button[data-tooltip]:after{right:0;top:26px}.gatsby-code-button[data-tooltip]:focus:after,.gatsby-code-button[data-tooltip]:hover:after{display:block;visibility:visible;z-index:200}.gatsby-code-button-toaster{align-items:center;bottom:0;display:flex;height:100vh;justify-content:center;left:0;pointer-events:none;position:fixed;right:0;top:0;width:100vw;z-index:500}.gatsby-code-button-toaster-text{animation:animation 3s cubic-bezier(.98,.01,.53,.47);background-color:#000;border-radius:2px;color:#fff;font-family:monospace;font-size:24px;letter-spacing:-1px;margin:0 15px;max-width:850px;opacity:0;padding:20px;text-align:center;width:100%}.gatsby-code-button-buffer{opacity:0;position:fixed;top:-9999px}@keyframes animation{0%,50%{opacity:1}50%,to{opacity:0}}
+
+/*
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}html{-webkit-text-size-adjust:100%;font-feature-settings:normal;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-variation-settings:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit}button,input,optgroup,select,textarea{font-feature-settings:inherit;color:inherit;font-family:inherit;font-size:100%;font-variation-settings:inherit;font-weight:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}html{scroll-behavior:smooth}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.no{list-style:none;margin:0;text-decoration:none}.toc{left:12%;padding-right:1rem;position:fixed;top:10rem}@media (max-width:2300px){.toc{left:10rem}}@media (max-width:2000px){.toc{left:8rem}}@media (max-width:1800px){.toc{left:6rem}}@media (max-width:1700px){.toc{left:5rem}}@media (max-width:1600px){.toc{left:4rem}}@media (max-width:1536px){.toc{display:none}}.toc{background-color:#f6f8fc;border-left:.4rem solid #ccced9}.toc a:hover{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity));font-weight:700}h1,h2,h3,h4{scroll-margin-top:2.5rem}.ol,.toc ul,.ul,ol{line-height:1.625;margin:0 0 0 1.25rem;padding-left:1rem}@media (max-width:1600px){.ol,.toc ul,.ul,ol{line-height:1.5}}.a,.toc a{--tw-text-opacity:1;box-shadow:none;color:rgb(156 163 175/var(--tw-text-opacity));cursor:pointer;font-weight:700;outline:none;padding:0;text-decoration:none}.highlight{--tw-text-opacity:1!important;color:rgb(0 0 0/var(--tw-text-opacity))!important;text-decoration-style:solid!important}.toc ol,.toc ul>li,.toc ul>li ul>li,.toc ul>li ul>li ul>li{list-style-type:none}.li,.toc li{padding:.125rem 0}@media (max-width:1600px){.li,.toc li{padding:0}}.h1,h1{font-size:2rem;line-height:2.75rem;margin-top:3.75rem}.h1,.h2,h1,h2{color:#2a2e36;font-weight:700;margin-bottom:1rem}.h2,h2{font-size:1.75rem;line-height:1.3;margin-top:3rem}.h3,h3{color:#2a2e36;font-size:1.375rem;font-weight:600;line-height:1.4;margin-bottom:1rem;margin-top:2.5rem}.h1+.h2,h1+h2{margin-top:.75rem}.p,p{color:#3f4758;font-weight:400}.ol,.ul,ol,ul{line-height:2;margin:.625rem 0 .625rem 1.25rem;padding-left:1rem}ol{list-style-type:decimal}ul>li{list-style-type:disc}ul>li ul>li{list-style:circle}ul>li ul>li ul>li{list-style:square}.li,li{padding:.125rem 0}.blockquote,blockquote{background-color:#f6f8fc;border-left:.25rem solid #ccced9;margin:1rem 0;padding:.25rem 1rem}.em,em{font-style:italic}.strong,strong{color:#2a2e36;font-weight:600}.u,u{text-decoration:underline}.del,del{text-decoration:line-through}.a,a{box-shadow:none;color:#5e9bf8;cursor:pointer;font-weight:500;outline:none;padding:0;text-decoration:underline}.summary,summary{margin:1rem 0}details>summary:first-of-type{counter-increment:list-item 0;display:list-item;list-style:disclosure-closed inside}details[open]>summary:first-of-type{list-style-type:disclosure-open}summary::marker{color:#a4bc9c}::marker{font-variant-numeric:tabular-nums;text-align:start!important;-moz-text-align-last:start!important;text-align-last:start!important;text-indent:0!important;text-transform:none;unicode-bidi:isolate}input{outline:none;text-decoration:none}input[type=checkbox i]:disabled{background-color:initial}input:not([type=range]):not([type=color]){writing-mode:horizontal-tb!important}input[type=checkbox i]{-webkit-appearance:auto;-moz-appearance:auto;appearance:auto;box-sizing:border-box}table{border:1px solid #ccced9;border-collapse:separate;border-spacing:0;display:table;margin:1.25rem 0;text-indent:0}thead{background-color:#f6f8fc;display:table-header-group}tbody,thead{border-color:inherit;vertical-align:middle}tbody{display:table-row-group}tr{border-color:inherit;display:table-row;vertical-align:inherit}thead th{font-weight:600}td,thead th{border-bottom:1px solid #ccced9;border-right:1px solid #ccced9;color:#2a2e36;display:table-cell;padding:1rem;vertical-align:inherit}td{font-weight:400}.sr-only{clip:rect(0,0,0,0);border-width:0;height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;white-space:nowrap;width:1px}.\!absolute{position:absolute!important}.absolute{position:absolute}.relative{position:relative}.inset-x-0{left:0;right:0}.-left-8{left:-2rem}.-top-5{top:-1.25rem}.bottom-8{bottom:2rem}.left-0{left:0}.left-\[calc\(50\%\+3rem\)\]{left:calc(50% + 3rem)}.top-0{top:0}.top-\[calc\(100\%-13rem\)\]{top:calc(100% - 13rem)}.isolate{isolation:isolate}.-z-10{z-index:-10}.mx-auto{margin-left:auto;margin-right:auto}.my-10{margin-bottom:2.5rem;margin-top:2.5rem}.my-2{margin-bottom:.5rem;margin-top:.5rem}.-mb-10{margin-bottom:-2.5rem}.-ml-20{margin-left:-5rem}.ml-1{margin-left:.25rem}.ml-3{margin-left:.75rem}.mr-10{margin-right:2.5rem}.mr-3{margin-right:.75rem}.mr-4{margin-right:1rem}.mr-6{margin-right:1.5rem}.mr-8{margin-right:2rem}.mt-1{margin-top:.25rem}.mt-10{margin-top:2.5rem}.mt-16{margin-top:4rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.aspect-\[1155\/678\]{aspect-ratio:1155/678}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-20{height:5rem}.h-6{height:1.5rem}.w-1\/2{width:50%}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-20{width:5rem}.w-6{width:1.5rem}.w-\[36\.125rem\]{width:36.125rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-7xl{max-width:80rem}.max-w-full{max-width:100%}.max-w-screen-xl{max-width:1280px}.max-w-xl{max-width:36rem}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform-gpu{transform:translate3d(var(--tw-translate-x),var(--tw-translate-y),0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-around{justify-content:space-around}.justify-evenly{justify-content:space-evenly}.gap-8{gap:2rem}.gap-x-8{-moz-column-gap:2rem;column-gap:2rem}.gap-y-10{row-gap:2.5rem}.gap-y-16{row-gap:4rem}.self-center{align-self:center}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:.25rem}.rounded-3xl{border-radius:1.5rem}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-xl{border-radius:.75rem}.border-2{border-width:2px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-solid{border-style:solid}.border-black{--tw-border-opacity:1;border-color:rgb(0 0 0/var(--tw-border-opacity))}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246/var(--tw-border-opacity))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235/var(--tw-border-opacity))}.border-inherit{border-color:inherit}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity))}.bg-badge-css{--tw-bg-opacity:1;background-color:rgb(21 114 182/var(--tw-bg-opacity))}.bg-badge-express{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity))}.bg-badge-git{--tw-bg-opacity:1;background-color:rgb(240 80 50/var(--tw-bg-opacity))}.bg-badge-html{--tw-bg-opacity:1;background-color:rgb(227 79 38/var(--tw-bg-opacity))}.bg-badge-js{--tw-bg-opacity:1;background-color:rgb(247 223 30/var(--tw-bg-opacity))}.bg-badge-socket{--tw-bg-opacity:1;background-color:rgb(1 1 1/var(--tw-bg-opacity))}.bg-badge-ts{--tw-bg-opacity:1;background-color:rgb(49 120 198/var(--tw-bg-opacity))}.bg-badge-vue{--tw-bg-opacity:1;background-color:rgb(79 192 141/var(--tw-bg-opacity))}.bg-badge-vuetify{--tw-bg-opacity:1;background-color:rgb(24 103 192/var(--tw-bg-opacity))}.bg-badge-webrtc{--tw-bg-opacity:1;background-color:rgb(51 51 51/var(--tw-bg-opacity))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity))}.bg-primary-green{--tw-bg-opacity:1;background-color:rgb(164 188 156/var(--tw-bg-opacity))}.bg-primary-green_bg{--tw-bg-opacity:1;background-color:rgb(214 245 203/var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-gradient-to-tr{background-image:linear-gradient(to top right,var(--tw-gradient-stops))}.from-\[\#8A52A3\]{--tw-gradient-from:#8a52a3 var(--tw-gradient-from-position);--tw-gradient-to:rgba(138,82,163,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-\[\#A4BC9C\]{--tw-gradient-from:#a4bc9c var(--tw-gradient-from-position);--tw-gradient-to:rgba(164,188,156,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-\[\#8CA68B\]{--tw-gradient-to:#8ca68b var(--tw-gradient-to-position)}.to-\[\#972B44\]{--tw-gradient-to:#972b44 var(--tw-gradient-to-position)}.p-2{padding:.5rem}.p-3{padding:.75rem}.p-4{padding:1rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-bottom:.25rem;padding-top:.25rem}.py-12{padding-bottom:3rem;padding-top:3rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-2\.5{padding-bottom:.625rem;padding-top:.625rem}.py-20{padding-bottom:5rem;padding-top:5rem}.py-24{padding-bottom:6rem;padding-top:6rem}.py-32{padding-bottom:8rem;padding-top:8rem}.py-40{padding-bottom:10rem;padding-top:10rem}.py-8{padding-bottom:2rem;padding-top:2rem}.pb-10{padding-bottom:2.5rem}.pl-16{padding-left:4rem}.pl-3{padding-left:.75rem}.pr-4{padding-right:1rem}.pt-20{padding-top:5rem}.text-left{text-align:left}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-7{line-height:1.75rem}.leading-8{line-height:2rem}.tracking-tight{letter-spacing:-.025em}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39/var(--tw-text-opacity))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229/var(--tw-text-opacity))}.text-primary-green{--tw-text-opacity:1;color:rgb(164 188 156/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.opacity-30{opacity:.3}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.ring-inset{--tw-ring-inset:inset}.ring-white\/10{--tw-ring-color:hsla(0,0%,100%,.1)}.ring-white\/20{--tw-ring-color:hsla(0,0%,100%,.2)}.blur-3xl{--tw-blur:blur(64px)}.blur-3xl,.drop-shadow-customRD{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-customRD{--tw-drop-shadow:drop-shadow(50px 50px 0 #a4bc9c)}.drop-shadow-shadowRD{--tw-drop-shadow:drop-shadow(20px 20px 15px #000)}.drop-shadow-shadowRD,.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-700{transition-duration:.7s}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.gatsby-code-button{color:#909090;font-size:1rem;font-weight:400;position:absolute;right:.6rem}.gatsby-code-button-toaster-text{--tw-drop-shadow:drop-shadow(0 25px 25px rgba(0,0,0,.15));background-color:#fafafa;border-radius:10rem;color:#000;filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);font-size:1rem;padding:.5rem;position:absolute;top:10rem;width:10rem}.hydrated{border-top-left-radius:1rem;border-top-right-radius:1rem}.before\:absolute:before{content:var(--tw-content);position:absolute}.before\:bottom-0:before{bottom:0;content:var(--tw-content)}.before\:left-0:before{content:var(--tw-content);left:0}.before\:right-0:before{content:var(--tw-content);right:0}.before\:top-0:before{content:var(--tw-content);top:0}.before\:-z-10:before{content:var(--tw-content);z-index:-10}.before\:bg-primary-project2:before{--tw-bg-opacity:1;background-color:rgb(190 191 255/var(--tw-bg-opacity));content:var(--tw-content)}.before\:bg-primary-project3:before{--tw-bg-opacity:1;background-color:rgb(239 237 239/var(--tw-bg-opacity));content:var(--tw-content)}.before\:bg-white:before{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity));content:var(--tw-content)}.before\:bg-gradient-to-tr:before{background-image:linear-gradient(to top right,var(--tw-gradient-stops));content:var(--tw-content)}.before\:opacity-70:before{content:var(--tw-content);opacity:.7}.before\:content-\[\'\'\]:before{--tw-content:"";content:var(--tw-content)}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity))}.hover\:bg-gray-50:hover{--tw-bg-opacity:1;background-color:rgb(249 250 251/var(--tw-bg-opacity))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:ring-gray-200:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(229 231 235/var(--tw-ring-opacity))}.group:hover .group-hover\:-z-10{z-index:-10}.group:hover .group-hover\:-translate-x-10{--tw-translate-x:-2.5rem}.group:hover .group-hover\:-translate-x-10,.group:hover .group-hover\:-translate-y-10{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:-translate-y-10{--tw-translate-y:-2.5rem}.group:hover .group-hover\:translate-x-10{--tw-translate-x:2.5rem}.group:hover .group-hover\:translate-x-10,.group:hover .group-hover\:translate-y-10{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:translate-y-10{--tw-translate-y:2.5rem}@media (prefers-color-scheme:dark){.dark\:border-gray-700{--tw-border-opacity:1;border-color:rgb(55 65 81/var(--tw-border-opacity))}.dark\:bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55/var(--tw-bg-opacity))}.dark\:text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.dark\:text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.dark\:hover\:bg-gray-700:hover{--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity))}.dark\:hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.dark\:focus\:ring-gray-600:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(75 85 99/var(--tw-ring-opacity))}}@media (min-width:640px){.sm\:left-\[calc\(50\%\+36rem\)\]{left:calc(50% + 36rem)}.sm\:top-\[calc\(100\%-40rem\)\]{top:calc(100% - 40rem)}.sm\:mt-20{margin-top:5rem}.sm\:w-\[72\.1875rem\]{width:72.1875rem}.sm\:py-20{padding-bottom:5rem;padding-top:5rem}.sm\:py-36{padding-bottom:9rem;padding-top:9rem}.sm\:py-40{padding-bottom:10rem;padding-top:10rem}.sm\:py-44{padding-bottom:11rem;padding-top:11rem}.sm\:pb-48{padding-bottom:12rem}.sm\:pt-20{padding-top:5rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-6xl{font-size:3.75rem;line-height:1}}@media (min-width:1024px){.lg\:order-1{order:1}.lg\:order-2{order:2}.lg\:mx-0{margin-left:0;margin-right:0}.lg\:mt-0{margin-top:0}.lg\:mt-24{margin-top:6rem}.lg\:flex{display:flex}.lg\:hidden{display:none}.lg\:w-auto{width:auto}.lg\:max-w-7xl{max-width:80rem}.lg\:max-w-none{max-width:none}.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:flex-row{flex-direction:row}.lg\:gap-y-16{row-gap:4rem}.lg\:space-x-8>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-left:calc(2rem*(1 - var(--tw-space-x-reverse)));margin-right:calc(2rem*var(--tw-space-x-reverse))}.lg\:border-0{border-width:0}.lg\:bg-transparent{background-color:transparent}.lg\:p-0{padding:0}.lg\:px-10{padding-left:2.5rem;padding-right:2.5rem}.lg\:px-6{padding-left:1.5rem;padding-right:1.5rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:pb-56{padding-bottom:14rem}.lg\:pt-20{padding-top:5rem}.lg\:text-center{text-align:center}.lg\:text-primary-green{--tw-text-opacity:1;color:rgb(164 188 156/var(--tw-text-opacity))}.lg\:hover\:bg-transparent:hover{background-color:transparent}.lg\:hover\:text-primary-green_hover:hover{--tw-text-opacity:1;color:rgb(140 166 139/var(--tw-text-opacity))}@media (prefers-color-scheme:dark){.lg\:dark\:hover\:bg-transparent:hover{background-color:transparent}.lg\:dark\:hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}}}</style><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 100)
+          }), 0)
+        }
+      }
+    })
+  </script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><h1>HTTP Cache</h1>
+<p>자주 쓰이는 리소스를 나중에 사용하기 위해 사본으로 저장하고, 나중에 동일한 요청을 했을 때, 캐시된 사본이 존재한다면 서버로 요청을 보내는 것이 아닌 Cache로부터 제공 된다. (⇒ 캐싱)</p>
+<h2>Cache는 왜 사용하는 것일까?</h2>
+<p>네트워크에 대해 이해하고 있어야한다.</p>
+<p>네트워크를 통해서 리소스를 가져오는 것은 느리고 비용이 많이 든다.</p>
+<p>클라이언트가 자주 쓰는 페이지가 존재한다면 해당 페이지에 접속할 때마다 항상 서버로부터 요청을 보내고 서버는 같은 리소스를 클라이언트에게 매 번 보내야한다.</p>
+<p>그러면 클라이언트는 매 번 해당 페이지를 이용할 때마다 UX적으로 느린 경험을 할 수 밖에 없다.</p>
+<p>또한 서버도 비용이 많이드는 리소스를 매 번 전달해야하므로 서버측에서도 부담이 많이 된다.</p>
+<p>이러한 문제점을 해결하기 위해 캐시를 사용하는 것이다.</p>
+<p>캐시를 이용하면 서버와 클라이언트 둘 다 이점을 볼 수 있다. 대부분 trade-off가 적용되는데 캐시는 trade-off가 적용되지 않는다.</p>
+<h2>Cache가 주는 이점들</h2>
+<ol>
+<li>불필요한 데이터 전송을 줄여 네트워크 비용 감소</li>
+<li>네트워크 병목현상과 거리로 인한 지연시간을 줄여 웹 페이지를 빠르게 불러옴으로써 UX 증가</li>
+<li>서버에 대한 요청을 줄여 서버의 부하 감소</li>
+<li>갑작스런 요청 쇄도에 대처 가능</li>
+</ol>
+<h2>HTTP Cache 종류</h2>
+<p>클라이언트에서 HTTP 요청을 보내면, 해당 요청을 바로 서버로 전송하지 않고 캐시된 데이터가 존재하는지 확인한다.</p>
+<p>캐시는 차례대로 서비스 워커 캐시 → 브라우저 캐시 → 프록시 캐시 (CDN) 순으로 확인 후 유효한 응답 값이 없을 경우 서버에   요청을 보내고 응답을 받게 된다.</p>
+<img src="../images/http_cache_flow.png" alt="Http Cache Flow"/>
+<h2>Worker?</h2>
+<h3>Web worker</h3>
+<p>JavaScript를 백그라운드에서 실행할 수 있는 쓰레드를 생성하는 기술</p>
+<p>웹 워커는 UI 쓰레드와 별개로 존재하므로 DOM에 접근할 수 없지만 자체적인 Global scope에서 Window scope와 같은 기능을 제공하기 때문에 지원 가능하다.</p>
+<h3>Shared worker</h3>
+<p>윈도우 창이나 Iframe, worker등의 다른 브라우징 컨텍스트에서도 접근이 가능하다.</p>
+<p>특정 사이트에 로그인 후 중간에 어떤 탭에서 로그아웃 하면 Shared worker에서 자신을 참조하고 있는 모든 브라우저 컨텍스트에 메시지를 보내 다른 탭에 잇는 로그인 된 사이트도 로그아웃 시킨다.</p>
+<p>(이 경우가 두 개의 탭을 동일한 사이트에서 로그인 했을 때 한 쪽에서 로그아웃 하면 다른 탭도 로그아웃 되는 현상)</p>
+<h3>Service worker</h3>
+<p>다른 문서나 소스로부터 발생되는 이벤트에 대응하기 위한 이벤트 Driven 방식이며 이벤트 기반 워커로서 JavaScript 파일의 형태를 갖고 있다.</p>
+<p>네트워크 요청을 가로채서 네트워크 사용 가능 여부에 따라 적절한 행동을 취하고, 서버 리소스를 업데이트 할 수 있다.</p>
+<p>지속적인 백그라운드 프로세싱을 위해 새 런타임을 생성하는 것이 아니라 설치하는 방식이다.</p>
+<p>웹 페이지와 별개로 존재하므로 DOM이나 Window 요소에 접근 불가하며 비동기적으로 설계되어 XHR이나 웹 저장소 등의 API를 서비스 워커 내에서 사용할 수 없다.</p>
+<p>비동기로 설계되어 서비스 워커는 JavaScript 서비스와 다른 스레드에서 동작하므로 블로킹하지 않는다.</p>
+<ul>
+<li>Service worker의 역할 및 기능<!-- -->
+<ul>
+<li>네트워크 프록시 역할</li>
+<li>오프라인 웹을 구현하기 위해 캐시 활용  가능</li>
+<li>브라우저 창이 닫힌 상태(백그라운드)에서도 동작하므로 푸시 알림 구현 가능</li>
+<li>채팅 혹은 사진 업로드 기능 사용 중 컴퓨터가 오프라인 상태가 되는 경우 인터넷이 다시 연결됐을 때 메시지 전송을 실패하지 않는 백그라운드 동기화 가능</li>
+<li>리소스를 세부적으로 캐싱 가능</li>
+<li>보안 상의 이유로 HTTPS 통신이 가능한 서버에서만 동작 가능 (Localhost 제외)<!-- -->
+<ul>
+<li>네트워크 요청을 수정할 수 있어 중간자 공격(Man In The Middle : MITM)에 취약<!-- -->
+<blockquote>
+<p>중간자 공격(Man In The Middle : MITM) :
+공격자가 사용자의 인터넷 서버와 해당 인터넷 트래픽의 목적지 사이에 끼어들어 데이터 전송을 가로채는 공격이다. 꼭 사용자와 인터넷 서버간이 아니더라도 사용자와 사용자 간에서도 데이터를 가로챌 수 있다.
+자세한 내용 참고
+https://nordvpn.com/ko/blog/mitm/</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Life Cycle
+Registration → Install → Activate → Idle → Fetch</li>
+<li>Service worker state<!-- -->
+<ul>
+<li>Installing</li>
+<li>Installed</li>
+<li>Activating</li>
+<li>Activated</li>
+<li>Redundant</li>
+</ul>
+</li>
+</ul>
+<h3>서비스 워커 캐시</h3>
+<p>서비스 워커에서 fetch 이벤트 핸들러를 만들고 네트워크 요청을 가로채서 네트워크가 아닌 서비스 워커의 캐시에서 확인하고 반환한다.</p>
+<h2>캐싱 레이어</h2>
+<h3>서비스 워커 캐싱</h3>
+<p>서비스 워커는 네트워크 유형의 HTTP 요청을 가로채고 캐싱 전략을 사용하여 브라우저에 반환되어야 하는 리소스를 결정한다.</p>
+<p>서비스 워커 캐시와 HTTP 캐시는 일반 용도로 사용되지만 서비스 워커 캐시가 정확히 무엇을 캐시하고 어떻게 캐싱하는지에 대해 알아보자</p>
+<img src="../images/service_worker_flow.png" alt="Service Worker Flow"/>
+<p>서비스 워커는 이벤트 리스너(일반적으로 fetch 이벤트)로 HTTP 요청을 가로채게 된다.</p>
+<p>이미지를 보면 <a href="https://developer.chrome.com/docs/workbox/modules/workbox-strategies/#cache-first-cache-falling-back-to-network">Cache-FIrst 캐싱 전략</a>으로 캐시 데이터를 먼저 확인하여 불필요한 HTTP 요청을 줄여준다.</p>
+<p>서비스 워커의 사용법 (Life Cycle)</p>
+<img src="../images/service_worker_lifecycle.png" alt="Service Worker Life Cycle"/>
+<ul>
+<li>
+<p>Registration (등록)</p>
+<ul>
+<li>
+<p>index.html 파일 script 태그 안에 <code>navigator.serviceWorker.register()</code>메서드를 사용해 서비스 워커를 등록한다.</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;mySite&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Test&lt;/h1&gt;
+    &lt;script&gt;
+      const registerServiceWorker = async () =&gt; {
+        // 브라우저에서 서비스 워커를 지원하는지 체크
+        if (&quot;serviceWorker&quot; in navigator) {
+          try {
+            console.log(&quot;서비스 워커 지원&quot;);
+
+            // 등록된 서비스 워커 지우기
+            navigator.serviceWorker.getRegistrations().then((r) =&gt; {
+              r[0].unregister();
+            });
+
+            // 현재 등록된 서비스 워커 확인
+            navigator.serviceWorker
+              .getRegistrations()
+              .then((res) =&gt; console.log(&quot;등록된 서비스 워커&quot;, res));
+
+            // 서비스 워커 등록
+            const registration = await navigator.serviceWorker.register(
+              &quot;./service-worker.js&quot;
+            );
+            console.log(registration);
+            if (registration.installing) {
+              console.log(&quot;Service worker installing&quot;);
+            } else if (registration.waiting) {
+              console.log(&quot;Service worker installed&quot;);
+            } else if (registration.active) {
+              console.log(&quot;Service worker active&quot;);
+            }
+          } catch (error) {
+            console.error(`Registration failed with ${error}`);
+          }
+        }
+      };
+
+      registerServiceWorker();
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Install (설치)</p>
+<ul>
+<li>사이트 첫 방문 시 Install 이벤트 발생 후 페이지 캐싱</li>
+<li>Install 리스너에서 캐시 초기화 후 오프라인 사용을 위해 파일들 추가</li>
+<li>캐시 이름을 저장할 변수를 생성하고, 파일들을 하나의 배열에 저장</li>
+</ul>
+<pre><code class="language-js">// service_worker.js
+
+// 서비스 워커 설치
+self.addEventListener(&quot;install&quot;, (pEvent) =&gt; {
+  console.log(&quot;(install)서비스워커 설치 중&quot;);
+
+  // 설치 완료되면 waitUntil 실행
+  pEvent.waitUntil(
+    // 캐시 변수 cacheName1 생성 후 cache.addALL() 메서드로 파일들을 하나의 배열로 저
+    caches
+      .open(&quot;cacheName1&quot;)
+      .then((cache) =&gt; cache.addAll([&quot;/test.png&quot;, &quot;/test.ico&quot;]))
+  );
+});
+</code></pre>
+</li>
+<li>
+<p>Activate (활성화)</p>
+<ul>
+<li>기존 서비스 워커가 없으면 설치를 시도하고, 설치를 성공하면 활성화한다.</li>
+<li>만약 기존에 서비스 워커가 존재한 경우, 새로운 버전을 백그라운드에서 설치하지만 아직 활성화는 하지 않는다. 이 시점의 워커를 <code>대기 중인 워커</code>라고 부르며, 대기 중인 워커는 이전 버전의 서비스 워커를 사용하는 페이지가 모두 닫힌 후에 활성화가 되고 이를 <code>활성 워커</code>라고 한다.</li>
+<li>활성화 절차를 더 빨리 하려면 <code>ServiceWorkerGlobalScope.skipWaiting()</code>을 사용할 수 있고, 새로운 활성 워커는 <code>Clients.claim()</code>을 사용해 이전 페이지를 회수할 수 있다.</li>
+<li>active 했을 때 과거의 캐시를 지우는 등 이전 서비스 워커 관련된 항목을 정리하면 좋다.</li>
+</ul>
+<pre><code class="language-js">// service-worker.js
+
+// 서비스 워커 활성화
+self.addEventListener(&quot;activate&quot;, (event) =&gt; {
+  // 캐시 허용 리스트
+  const cacheAllowlist = [&quot;v2&quot;];
+
+  // 활성화 되면 waitUntil 실행
+  event.waitUntil(
+    caches.keys().then((keyList) =&gt; {
+      Promise.all(
+        keyList.map((key) =&gt; {
+          // 이전에 생성한 캐시가 허용되지 않았다면
+          if (!cacheAllowlist.includes(key)) {
+            // 해당 캐시를 지웁니다.
+            return caches.delete(key);
+          }
+        })
+      );
+    })
+  );
+});
+</code></pre>
+</li>
+<li>
+<p>Fetch</p>
+<ul>
+<li>서비스 워커 설치 후 fetch 요청을 감지 후 처리</li>
+</ul>
+<pre><code class="language-js">// service-worker.js
+
+// 요청이 올 때마다 가로채기
+self.addEventListener(&quot;fetch&quot;, (event) =&gt; {
+  console.log(&quot;fetch&quot;);
+  event.respondWith(
+    caches.match(event.request).then((response) =&gt; {
+      // request에 캐시가 있다면 반환
+      if (response) {
+        console.log(&quot;Found response in cache:&quot;, response);
+
+        return response;
+      }
+      console.log(&quot;No response found in cache. About to fetch from network…&quot;);
+
+      // 없으면 네트워크 fetch로 요청
+      return fetch(event.request)
+        .then((response) =&gt; {
+          console.log(&quot;Response from network is:&quot;, response);
+
+          return response;
+        })
+        .catch((error) =&gt; {
+          console.error(&quot;Fetching failed:&quot;, error);
+
+          throw error;
+        });
+    })
+  );
+});
+</code></pre>
+<details><summary>카카오 tech 블로그에서 사용한 예시</summary><pre><code class="language-html">&lt;!--index.html--&gt;
+&lt;script&gt;
+			// ...
+			// 서비스 워커 등록 후 fetch 요청
+			registerServiceWorker();
+      fetch(&quot;https://jsonplaceholder.typicode.com/users/1&quot;)
+        .then((response) =&gt; response.json())
+        .then((data) =&gt; console.log(data))
+        .catch((error) =&gt; console.log(error));
+&lt;/script&gt;
+</code></pre><pre><code class="language-jsx">self.addEventListener(&quot;fetch&quot;, function (event) {
+  const { method, headers, url } = event.request;
+  console.log(&quot;[SW] Fetch Method : &quot;, method);
+  console.log(&quot;[SW] Fetch Headers : &quot;, headers);
+  console.log(&quot;[SW] Fetch URL : &quot;, url);
+});
+</code></pre></details>
+</li>
+</ul>
+<h3>실제 실행해보기</h3>
+<ul>
+<li>
+<p>캐시 확인</p>
+<p>캐시 저장공간에 2개의 캐시를 생성했다. cache-v1과 cacheName이 있는데 activate 됐을 때 허용된 캐시만 남기고 허용되지 않은 캐시는 삭제되는지 테스트 해봤다. (허용되지 않은 캐시는 cacheName)</p>
+<img src="../images/service_worker_1.png" alt="Service Worker 1"/>
+<p>성공적으로 허용되지 않은 캐시는 사라지는 것을 볼 수 있다.</p>
+<img src="../images/service_worker_2.png" alt="Service Worker 2"/>
+</li>
+<li>
+<p>캐시가 저장되고 삭제되는 것을 봤으니 오프라인 모드에서 동작하는지 확인해봐야죠</p>
+<img src="../images/service_worker_execution.gif" alt="Service Worker Execution"/>
+<p>네트워크 환경을 오프라인으로 변경 후 새로고침 하면 인터넷 연결 없음이 뜨지만</p>
+<p>이 후에 서비스 워커가 설치 및 서비스 워커가 실행되면서 캐시에 저장되어 있는 파일을 가져오게 되고 정상적으로 동작하는 것을 볼 수 있다.</p>
+</li>
+<li>
+<p>외부 url fetch로 호출 시 3초가 걸리도록 설정했다.
+<img src="../images/service_worker_fetch_code.png" alt="Service Worker Fetch code"/>
+캐시 비우기 및 강력 새로고침하면 아래 사진처럼 3초 뒤에 fetch 데이터를 호출한다.
+<img src="../images/service_worker_prev_caching.png" alt="Service Worker Prev Caching"/>
+새로고침하면 캐시되어있는 데이터를 바로 가져오는 것을 볼 수 있다.
+<img src="../images/service_worker_after_caching.png" alt="Service Worker After Caching"/></p>
+</li>
+</ul>
+<h3>동작 시나리오 정리</h3>
+<ol>
+<li>사용자가 처음 웹 서비스에 들어오면 서비스 워커가 설치됨.</li>
+<li>서비스 워커는 Cache Storage API를 이용해 정적 파일을 캐시에 저장.</li>
+<li>서비스 워커 설치 후 실행되면서 허용되지 않은 캐시가 있을 경우 삭제.</li>
+<li>이후 사용자가 요청을 보내면 서비스 워커에 의해 캐시 반환.
+⇒ 오프라인 환경에서도 서비스 워커 캐시를 반환하므로 정상 작동.</li>
+<li>만약 캐시에 해당 요청에 대한 반환 값이 없다면 HTTP 요청으로 전송</li>
+</ol>
+<h3>주의사항</h3>
+<ol>
+<li>
+<p>service worker는 https와 <a href="http://localhost">localhost</a> 환경에서 동작 (본인은 express 환경에서 동작시킴)</p>
+<img src="../images/service_worker_caution_1.png" alt="Service Worker Caution 1"/>
+</li>
+<li>
+<p>개발자도구 &gt; 애플리케이션 &gt; 좌측 탭에 Service Workers &gt; 새로고침 시 업데이트 체크</p>
+<img src="../images/service_worker_caution_2.png" alt="Service Worker Caution 2"/>
+</li>
+<li>
+<p>express 환경에서 진행할 경우 http://localhost:7777/service-worker.js ~~~관련 에러가 뜰 경우 정적 파일을 찾지 못하는 것이기 때문에 express에서 아래 사진과 같이 설정해줘야 함</p>
+<img src="../images/service_worker_caution_3.png" alt="Service Worker Caution 3"/>
+</li>
+<li>
+<p>만약 아래와 같이 cache.addAll에 대한 에러가 발생했다 캐시하는 목록들 중에서 404 error가 발생했기 때문이다.</p>
+<img src="../images/service_worker_caution_4.png" alt="Service Worker Caution 4"/>
+<p>네트워크 탭을 열어보면 취소된 내용 말고, index.html 404 Error가 보인다.
+해당 index.html을 가져오지 못하는 것이므로 경로 수정을 해주면 해결된다.</p>
+<p>index.html은 / 경로로 수정하면 해결된다.</p>
+<img src="../images/service_worker_caution_5.png" alt="Service Worker Caution 5"/>
+<p>수정한 결과는 다음과 같이 캐시 저장공간에 캐시할 파일들이 추가된 것을 확인할 수 있다.</p>
+<img src="../images/service_worker_caution_6.png" alt="Service Worker Caution 6"/>
+<img src="../images/service_worker_caution_7.png" alt="Service Worker Caution 7"/>
+</li>
+<li>
+<p>대부분의 블로그나 service worker를 다루는 사이트에서 fetch 요청을 캐시할 때 다음과 같은 코드를 사용한다.</p>
+<pre><code class="language-js">self.addEventListener(&quot;fetch&quot;, (event) =&gt; {
+  event.respondWith(
+    fetch(event.request).catch(() =&gt; {
+      return caches
+        .open(cacheName)
+        .then((cache) =&gt; cache.match(event.request));
+    })
+  );
+});
+</code></pre>
+<p>코드를 보면 잘 동작될 것 같은 코드지만, 내 환경에서는 동작하지 않았다.</p>
+<p><code>fetch(…).catch</code> 에 대한 에러가 발생했다.</p>
+<p>내가 생각한 이유는 fetch는 HTTP 통신 방법인데 나는 오프라인 환경에서 동작을 시켜야 했기 때문에 안됐던 것 같다.</p>
+<p>그래서 나는 <a href="https://developer.mozilla.org/en-US/docs/Web/API/FetchEvent/request">MDN에서 제공하는 FetchEvent request 예제</a>를 사용했다.</p>
+<pre><code class="language-js">// 요청이 올 때마다 가로채기
+self.addEventListener(&quot;fetch&quot;, (event) =&gt; {
+  console.log(&quot;fetch&quot;);
+  event.respondWith(
+    caches.match(event.request).then((response) =&gt; {
+      if (response) {
+        console.log(&quot;Found response in cache:&quot;, response);
+
+        return response;
+      }
+      console.log(
+        &quot;No response found in cache. About to fetch from network…&quot;
+      );
+
+      return fetch(event.request)
+        .then((response) =&gt; {
+          console.log(&quot;Response from network is:&quot;, response);
+
+          return response;
+        })
+        .catch((error) =&gt; {
+          console.error(&quot;Fetching failed:&quot;, error);
+
+          throw error;
+        });
+    })
+  );
+});
+</code></pre>
+</li>
+</ol>
+<h3>참고</h3>
+<details><summary>service worker</summary><ul>
+<li>기업 기술 블로그에서 사용 예시</li>
+</ul><p>https://fe-developers.kakaoent.com/2022/221208-service-worker/</p><ul>
+<li>개인 블로그 설명</li>
+</ul><p><a href="https://velog.io/@ouo_yoonk/PWA-Service-worker-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%BA%90%EC%8B%9C#http-cache%EC%99%80-service-workder-cache">https://velog.io/@ouo_yoonk/PWA-Service-worker-그리고-캐시#http-cache와-service-workder-cache</a></p><p>https://jdh5202.tistory.com/817 (참고하는데 도움 됨)</p><p>https://shj.rip/bc900e3f-cc71-4a7e-b81d-3ffb8cdf6f37</p><p>https://blog.arnellebalane.com/offline-web-applications-with-service-workers-29b23b49b305 (예시와 설명이 잘 되어 있음)</p><p>https://somedaycode.github.io/develop/2021/03/12/cacheStorage/</p><ul>
+<li>web dev (구글 개발자들의 아티클)</li>
+</ul><p>https://web.dev/i18n/ko/service-worker-caching-and-http-caching/</p><p>https://developer.chrome.com/docs/workbox/modules/workbox-strategies/#cache-first-cache-falling-back-to-network</p><p>https://web.dev/offline-cookbook/#serving-suggestions</p><p>https://web.dev/service-workers-cache-storage/</p><ul>
+<li>MDN</li>
+</ul><p>https://developer.mozilla.org/ko/docs/Web/API/Service_Worker_API</p><p>https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/install_event</p><p>https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/activate_event</p><p>https://developer.mozilla.org/ko/docs/Web/API/ServiceWorker</p><p>https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/delete</p><p>https://developer.mozilla.org/en-US/docs/Web/API/FetchEvent/request</p><ul>
+<li>문제 해결 참고</li>
+</ul><p>https://stackoverflow.com/questions/47527223/a-bad-http-response-code-404-was-received-when-fetching-the-script</p><p>https://stackoverflow.com/questions/39136625/service-worker-registration-failed</p><p>https://stackoverflow.com/questions/66529102/uncaught-in-promise-typeerror-failed-to-execute-cache-on-addall-request</p></details>
+<details><summary>cache</summary><ul>
+<li>MDN</li>
+</ul><p>https://developer.mozilla.org/en-US/docs/Web/API/Cache/delete</p><p>https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/delete</p><p>https://developer.mozilla.org/en-US/docs/Web/API/Cache/match</p><ul>
+<li>web dev</li>
+</ul><p>https://web.dev/cache-api-quick-guide/#cacheaddall</p><ul>
+<li>개인 블로그</li>
+</ul><p><a href="https://velog.io/@chltjdrhd777/%EA%B8%B0%EC%97%85%EA%B3%BC%EC%A0%9C-%ED%9A%8C%EA%B3%A0-cache-storage-%EB%B0%8F-%EA%B8%B0%ED%83%80-%EA%B3%A0%EC%83%9D%EB%82%B4%EC%9A%A9">https://velog.io/@chltjdrhd777/기업과제-회고-cache-storage-및-기타-고생내용</a></p><p><a href="https://doinge-coding.tistory.com/entry/%EC%9B%B9%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-IndexedDB-Cache-API">https://doinge-coding.tistory.com/entry/웹스토리지-IndexedDB-Cache-API</a></p><p>https://somedaycode.github.io/develop/2021/03/12/cacheStorage/</p></details></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/post3/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-c5ca9f6d706073d9ce08.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-00c7b635443bec582b3d.js\"],\"component---src-pages-blog-js\":[\"/component---src-pages-blog-js-9ec2f90e945655964c30.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-c3682d8591c6107aa643.js\"],\"component---src-pages-portfolio-js\":[\"/component---src-pages-portfolio-js-9de7c23232d1ea37b893.js\"],\"component---src-posts-post-1-md\":[\"/component---src-posts-post-1-md-08939e5a7cc25d1bdb04.js\"],\"component---src-posts-post-2-md\":[\"/component---src-posts-post-2-md-64faba9e4c76a4ec67e7.js\"],\"component---src-posts-post-3-md\":[\"/component---src-posts-post-3-md-01383d4a34a93236f4e2.js\"],\"component---src-template-blog-post-js\":[\"/component---src-template-blog-post-js-1ad31e847639b8164114.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="ccafea8dfa890aa69c7c";</script><script src="/webpack-runtime-f948a6ee4e031a35d988.js" async></script><script src="/framework-c5abdaa1c2b0f2d49f65.js" async></script><script src="/app-c5ca9f6d706073d9ce08.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
