@@ -11,7 +11,6 @@ export default function Template({ data }) {
   const profile = getImage(post?.frontmatter.profile);
   const thumbnail = getImage(post?.frontmatter.thumbnail);
   let options = {
-    root: document.querySelector(".layout"),
     rootMargin: "0px",
     threshold: 1.0,
   };
@@ -26,58 +25,63 @@ export default function Template({ data }) {
   let tempEl;
   let prev;
   let count = 0;
-  const observer = new IntersectionObserver((entries) => {
-    let targets = entries.filter((entry) => {
-      console.log("entry :", entry.intersectionRect.top, entry.target, entries);
-      if (entry.isIntersecting) {
-        q.push();
-      }
-      return entry.intersectionRect.top <= 400;
-    });
-
-    if (targets.length === 0) return;
-
-    tocRef.current?.querySelectorAll(".highlight").forEach((element) => {
-      element.classList.remove("highlight");
-    });
-
-    targets.forEach((io) => {
-      let scrollY = window.scrollY;
-      let targetY = io.target.offsetTop;
-      const targetId = io.target.getAttribute("id");
-      const linkSelector = `.toc a[href='#${encodeURI(targetId ?? "")}']`;
-      const linkElement = tocRef.current?.querySelector(linkSelector);
-      console.log(
-        targetId,
-        linkSelector,
-        linkElement,
-        scrollY,
-        io.target.offsetTop
-      );
-
-      console.log(tempId, targetId, tempId !== targetId);
-
-      if (scrollY >= targetY) {
-        linkElement?.classList.add("highlight");
-      } else {
-        linkElement?.classList.remove("highlight");
-        prev?.classList.add("highlight");
-        console.log(tempId, tempEl, linkElement);
-      }
-
-      if (!tempId || tempId !== targetId) {
-        count++;
-        prev = tempEl;
-        q.push(prev);
-        tempId = targetId;
-        tempEl = linkElement;
-        console.log(tempId, tempEl, prev, q, count);
-      }
-    });
-  }, options);
 
   React.useEffect(() => {
     const headingElements = ref.current?.querySelectorAll("h1, h2, h3");
+    const observer = new IntersectionObserver((entries) => {
+      let targets = entries.filter((entry) => {
+        console.log(
+          "entry :",
+          entry.intersectionRect.top,
+          entry.target,
+          entries
+        );
+        if (entry.isIntersecting) {
+          q.push();
+        }
+        return entry.intersectionRect.top <= 400;
+      });
+
+      if (targets.length === 0) return;
+
+      tocRef.current?.querySelectorAll(".highlight").forEach((element) => {
+        element.classList.remove("highlight");
+      });
+
+      targets.forEach((io) => {
+        let scrollY = window.scrollY;
+        let targetY = io.target.offsetTop;
+        const targetId = io.target.getAttribute("id");
+        const linkSelector = `.toc a[href='#${encodeURI(targetId ?? "")}']`;
+        const linkElement = tocRef.current?.querySelector(linkSelector);
+        console.log(
+          targetId,
+          linkSelector,
+          linkElement,
+          scrollY,
+          io.target.offsetTop
+        );
+
+        console.log(tempId, targetId, tempId !== targetId);
+
+        if (scrollY >= targetY) {
+          linkElement?.classList.add("highlight");
+        } else {
+          linkElement?.classList.remove("highlight");
+          prev?.classList.add("highlight");
+          console.log(tempId, tempEl, linkElement);
+        }
+
+        if (!tempId || tempId !== targetId) {
+          count++;
+          prev = tempEl;
+          q.push(prev);
+          tempId = targetId;
+          tempEl = linkElement;
+          console.log(tempId, tempEl, prev, q, count);
+        }
+      });
+    }, options);
     headingElements?.forEach((element) => {
       console.log(element, observer.observe(element));
 
