@@ -6,16 +6,25 @@ import Toc from "../components/blog/toc.js";
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
 deckDeckGoHighlightElement();
 
-export default function Template({ data }) {
+export default function Template({ location, data }) {
   const post = data?.markdownRemark;
   const profile = getImage(post?.frontmatter.profile);
   const thumbnail = getImage(post?.frontmatter.thumbnail);
   let options = {
     root: document.querySelector(".layout"),
     rootMargin: "0px",
-    threshold: 1.0,
+    threshold: 0.1,
   };
-  // const parser = new DOMParser();
+  // Regular expression to match <h1> and <h2> tags and their contents
+  const regex = /<h[123]\s+.*?>[\s\S]*?(?=<h[123]\s*|$)/g;
+
+  // Replace matched tags with the desired format
+  const modifiedHTML = post?.html.replace(
+    regex,
+    (match) => `<div class="container">${match}</div>`
+  );
+  console.log(modifiedHTML);
+  const parser = new DOMParser();
   // const currentElements = parser
   //   .parseFromString(post.html.trim(), "text/html")
   //   .querySelectorAll("h1, h2, h3");
@@ -26,65 +35,83 @@ export default function Template({ data }) {
   let tempEl;
   let prev;
   let count = 0;
-  const observer = new IntersectionObserver((entries) => {
-    let targets = entries.filter((entry) => {
-      console.log("entry :", entry.intersectionRect.top, entry.target, entries);
-      if (entry.isIntersecting) {
-        q.push();
-      }
-      return entry.intersectionRect.top <= 400;
-    });
 
-    if (targets.length === 0) return;
-
-    tocRef.current?.querySelectorAll(".highlight").forEach((element) => {
-      element.classList.remove("highlight");
-    });
-
-    targets.forEach((io) => {
-      let scrollY = window.scrollY;
-      let targetY = io.target.offsetTop;
-      const targetId = io.target.getAttribute("id");
-      const linkSelector = `.toc a[href='#${encodeURI(targetId ?? "")}']`;
-      const linkElement = tocRef.current?.querySelector(linkSelector);
-      console.log(
-        targetId,
-        linkSelector,
-        linkElement,
-        scrollY,
-        io.target.offsetTop
-      );
-
-      console.log(tempId, targetId, tempId !== targetId);
-
-      if (scrollY >= targetY) {
-        linkElement?.classList.add("highlight");
-      } else {
-        linkElement?.classList.remove("highlight");
-        prev?.classList.add("highlight");
-        console.log(tempId, tempEl, linkElement);
-      }
-
-      if (!tempId || tempId !== targetId) {
-        count++;
-        prev = tempEl;
-        q.push(prev);
-        tempId = targetId;
-        tempEl = linkElement;
-        console.log(tempId, tempEl, prev, q, count);
-      }
-    });
-  }, options);
+  React.useEffect(() => {}, []);
 
   React.useEffect(() => {
-    const headingElements = ref.current?.querySelectorAll("h1, h2, h3");
-    headingElements?.forEach((element) => {
-      console.log(element, observer.observe(element));
+    console.log("HAHAHAH" + location.pathname);
+    const observer = new IntersectionObserver((entries) => {
+      let targets = entries.filter((entry) => {
+        // console.log("entry :", entry.intersectionRect.top, entry.target, entry);
+        return entry.intersectionRect.top;
+      });
+      let targetsHighlight = entries.filter((entry) => {
+        // console.log("entry :", entry.intersectionRect.top, entry.target, entry);
+        return entry.intersectionRect.top === 0;
+      });
+      console.log("targets : ", targets);
+      console.log("targetsHighlight : ", targetsHighlight);
 
-      observer.observe(element);
-    });
+      if (targets.length === 0) return;
+
+      tocRef.current?.querySelectorAll(".highlight").forEach((element) => {
+        element.classList.remove("highlight");
+      });
+      targets.forEach((io) => {
+        let scrollY = window.scrollY;
+        let targetY = io.target.offsetTop;
+        // const targetId = io.target.getAttribute("id");
+        const targetId = parser
+          .parseFromString(io.target.innerHTML, "text/html")
+          .querySelector("h1, h2, h3")
+          .getAttribute("id");
+        const linkSelector = `.toc a[href='#${encodeURI(
+          targetId.toLowerCase() ?? ""
+        )}']`;
+        const linkElement = tocRef.current?.querySelector(linkSelector);
+        console.log(linkSelector);
+        console.log(tocRef.current);
+
+        // console.log(
+        //   targetId,
+        //   linkSelector,
+        //   linkElement,
+        //   scrollY,
+        //   io.target.offsetTop
+        // );
+
+        // console.log(tempId, targetId, tempId !== targetId);
+
+        if (scrollY >= targetY) {
+          linkElement?.classList.add("highlight");
+          console.log(linkElement);
+        } else {
+          linkElement?.classList.remove("highlight");
+          // prev?.classList.add("highlight");
+          // console.log(tempId, tempEl, linkElement);
+        }
+
+        // if (!tempId || tempId !== targetId) {
+        //   count++;
+        //   prev = tempEl;
+        //   // q.push(prev);
+        //   tempId = targetId;
+        //   tempEl = linkElement;
+        //   // console.log(tempId, tempEl, prev, count);
+        // }
+      });
+    }, options);
+    const headingElements = ref.current?.querySelectorAll(".container");
+    // headingElements?.forEach((element) => {
+    //   console.log(element);
+    //   // console.log(location.pathname);
+    //   observer.observe(element);
+    // });
+    for (let hello of headingElements) {
+      observer.observe(hello);
+    }
     return () => observer.disconnect();
-  }, []);
+  }, [location.pathname]);
 
   return (
     <div className="layout">
@@ -152,7 +179,7 @@ export default function Template({ data }) {
               />
               <div
                 className=""
-                dangerouslySetInnerHTML={{ __html: post?.html }}
+                dangerouslySetInnerHTML={{ __html: modifiedHTML }}
               />
             </article>
           </div>
