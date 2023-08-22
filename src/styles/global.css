@@ -15,6 +15,76 @@
     list-style: none;
     margin: 0;
   }
+
+  .toc {
+    @apply fixed top-40 left-[12%] 7xl:left-40 6xl:left-32 5xl:left-24 4xl:left-20 3xl:left-16 2xl-m:hidden pr-4;
+    border-left: 0.4rem solid rgb(204, 206, 217);
+    background-color: rgb(246, 248, 252);
+    /* left: 4%; */
+  }
+
+  .toc a:hover {
+    @apply text-black font-bold;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply scroll-mt-10;
+  }
+
+  .toc ul,
+  ol,
+  .ul,
+  .ol {
+    margin: 0;
+    margin-left: 1.25rem;
+    padding-left: 1rem;
+    @apply 3xl:leading-normal leading-relaxed;
+  }
+
+  .toc a,
+  .a {
+    @apply text-gray-400;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: none;
+    outline: none;
+  }
+
+  .highlight {
+    @apply !text-black !decoration-solid;
+  }
+  /* ol > li {
+    color: #3b424f;
+    list-style: decimal;
+  } */
+
+  .toc ol {
+    @apply list-none;
+  }
+
+  .toc ul > li {
+    @apply list-none;
+  }
+
+  .toc ul > li ul > li {
+    @apply list-none;
+  }
+
+  .toc ul > li ul > li ul > li {
+    @apply list-none;
+  }
+
+  .toc li,
+  .li {
+    padding: 0.125rem 0;
+    @apply 3xl:p-0;
+  }
+
   /* head */
 
   h1,

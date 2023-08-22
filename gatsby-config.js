@@ -87,6 +87,15 @@ module.exports = {
             resolve: `gatsby-remark-code-titles`,
           },
           "gatsby-remark-gifs",
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              className: "toc",
+              offsetY: 100,
+              isIconAfterHeader: false,
+              icon: false,
+            },
+          },
         ],
       },
     },

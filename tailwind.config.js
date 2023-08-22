@@ -3,7 +3,7 @@ module.exports = {
   content: [
     `./src/pages/**/*.{js,jsx,ts,tsx}`,
     `./src/components/**/*.{js,jsx,ts,tsx}`,
-    `./src/templates/*.{js,jsx,ts,tsx}`,
+    `./src/template/*.{js,jsx,ts,tsx}`,
   ],
   theme: {
     extend: {
@@ -43,6 +43,26 @@ module.exports = {
       dropShadow: {
         customRD: "50px 50px 0 #A4BC9C", // x y blur color
         shadowRD: "20px 20px 15px #000000", // x y blur color
+      },
+      screens: {
+        "7xl": {
+          max: "2300px",
+        },
+        "6xl": {
+          max: "2000px",
+        },
+        "5xl": {
+          max: "1800px",
+        },
+        "4xl": {
+          max: "1700px",
+        },
+        "3xl": {
+          max: "1600px",
+        },
+        "2xl-m": {
+          max: "1536px",
+        },
       },
     },
     fontFamily: {

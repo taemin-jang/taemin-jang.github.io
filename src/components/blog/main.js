@@ -36,8 +36,8 @@ const Main = () => {
           <div className="px-8 lg:px-10">
             {edges.map((item, i) => (
               <div className="mt-8" key={i + 1}>
-                <Link
-                  to={item.node.frontmatter.slug}
+                <a
+                  href={item.node.frontmatter.slug}
                   className="no flex"
                   key={item.node.frontmatter.slug}
                 >
@@ -54,7 +54,7 @@ const Main = () => {
                       {item.node.frontmatter.description}
                     </p>
                   </div>
-                </Link>
+                </a>
                 <hr className="mt-8"></hr>
               </div>
             ))}
